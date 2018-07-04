@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&subset=latin-ext');
+
+*
+{
+    box-sizing: border-box;
+}
+
+html
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: 'Libre Baskerville', serif;
+}
