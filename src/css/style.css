@@ -177,7 +177,7 @@ a:hover
     padding: 2rem 3rem;
 }
 
-.about_section
+.about_section, .character
 {
     width: 100%;
     background: #636566;
@@ -185,7 +185,7 @@ a:hover
     line-height: 1.5em;
 }
 
-.about_section h1
+.about_section h1, .character h1
 {
     font-size: 1.5em;
     line-height: 2em;
@@ -218,4 +218,39 @@ a:hover
     margin: 1rem;
     border: 2px solid rgba(255, 255, 255);
     box-shadow: 0 0 1rem rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: 0 0 1rem rgba(255, 255, 255, 0.8);
+    -moz-box-shadow: 0 0 1rem rgba(255, 255, 255, 0.8);
+    transition: all 0.5s ease-in-out;
+}
+
+.gallery_image img:hover
+{
+    transform: scale(1.2);
+}
+
+.movie_section
+{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+
+.single_movie
+{
+    width: 560px;
+    height: 315px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer
+{
+    text-align: center;
+    background-color: rgba(99,101,102);
+    font-size: 1.5rem;
+    padding: 2rem;
 }
