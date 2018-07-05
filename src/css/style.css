@@ -25,8 +25,7 @@ body
 
 header 
 {
- background-image: linear-gradient(#142433, #ffffff);
-    
+ background-color: #142433;
     height: 10vh;
 }
 
@@ -37,7 +36,8 @@ header
     line-height: 10vh;
     margin: 0;
     font-size: 3rem;
-    background: yellow;
+    background: #142433;
+    text-transform: uppercase;
 }
 
 .nav_ul
@@ -48,7 +48,7 @@ header
     padding: 0;
     text-align: center;
     width: 60%;
-    background: red;
+    background: #142433;
     font-size: 1.4rem;
 }
 
@@ -58,7 +58,14 @@ nav ul li
     position: relative;
     width: 18%;
     line-height: 10vh;
-    background: blue;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li:hover
+{
+    background: #636566;
+    color: #142433;
 }
 
 nav ul ul
@@ -73,8 +80,10 @@ nav ul ul li
     display: block;
     line-height: 10vh;
     text-align: center;
-    background: pink;
+    background: #142433;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li:hover > ul
@@ -82,7 +91,7 @@ nav ul li:hover > ul
     display: block;
     position: absolute;
     z-index: 1;
-    background: blue;
+    background: #142433;
     text-align: center;
 }
 
@@ -92,12 +101,15 @@ a
     display: block;
     line-height: 10vh;
     color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
 a:hover
 {
-    color: black;
-    transition-duration: 0.7s;
+    color: #142433;
+    display: block;
+    transition-duration: 0.3s;
 }
 
 .clear
@@ -132,7 +144,7 @@ a:hover
     width: 70%;
     height: 20vh;
     font-size: 5rem;
-    background: rgba( 0, 0, 0, 0.4);
+    background: rgba(99,101,102, 0.4);
     position: absolute;
     top: 75%;
     left: 50%;
@@ -156,4 +168,54 @@ a:hover
 .big
 {
     text-transform: uppercase;
+}
+
+.container
+{
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+}
+
+.about_section
+{
+    width: 100%;
+    background: #636566;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.about_section h1
+{
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+.gallery_section
+{
+    width: 100%;
+}
+
+.gallery_section h2
+{
+    font-size: 1.5em;
+    line-height: 2em;
+    text-align: center;
+}
+
+.gallery_image
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.gallery_image img
+{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 1rem;
+    border: 2px solid rgba(255, 255, 255);
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.8);
 }
