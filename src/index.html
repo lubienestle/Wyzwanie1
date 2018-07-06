@@ -33,12 +33,12 @@
 </span> Cocker spaniel</h1>
                 <ul class="nav_ul">
                     <li><a href="#">Strona główna</a></li>
-                    <li><a href="#">Opis rasy</a>
+                    <li><a href="#character">Opis rasy</a>
                         <ul>
-                            <li><a href="#">Wzorzec</a></li>
-                            <li><a href="#">Charakter</a></li>
-                            <li><a href="#">Zdrowie</a></li>
-                            <li><a href="#">Historia</a></li>
+                            <li><a href="#character">Wzorzec</a></li>
+                            <li><a href="#character">Charakter</a></li>
+                            <li><a href="#character">Zdrowie</a></li>
+                            <li><a href="#character">Historia</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Na wesoło</a></li>
@@ -68,7 +68,7 @@
         </section>
         <section>
             <article class="character">
-                <div class="container">
+                <div class="container" id="character">
                   <h1>Charakterystyka rasy</h1>
                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum labore dolorum sapiente necessitatibus nostrum alias, iusto maxime blanditiis placeat commodi magni sint vitae dolorem rerum provident, dolore, molestias veritatis voluptate!
                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nam, doloremque cum quo voluptatem tempore, dicta, consectetur vitae quod, rem eveniet tenetur quos consequuntur quaerat aspernatur. Suscipit molestias magni Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem aperiam maiores debitis dolorum ad deserunt quasi distinctio aliquam, numquam alias, fugiat fugit nisi eaque porro id corrupti velit tenetur.</p>
@@ -110,9 +110,22 @@
                 </figure>
             </div>
         </section>
+        
+        <section>
+            <div class="container contactform">
+                <form action="form.php" method="post">
+                    <label for="name">Imię: </label><br /><input type="text" name="name" id="name" required><br />
+                    <label for="email">E-mail: </label><br /><input type="email" name="email" id="email" required><br />
+                    <label for="msg">Wiadomość: </label><textarea rows="6" name="msg" id="msg" required></textarea><br />
+                    <input type="submit" value="Wyślij" class="btn" name="submit">
+                </form>
+            </div>
+        </section>
         <footer>
           <div class="credit"><div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div></div>
-           <p>&#169; Strona stworzona przez www.cockerspaniele.pl</p>
+           <div class="footer">
+              <span class="rights">&#169; Strona stworzona przez www.cockerspaniele.pl</span>
+               <span class="contact"><a href="#" class="a_contact">Kontakt</a></span></div>
         </footer>
     </body>
 </html>
